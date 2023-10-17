@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('https://nepalidate.onrender.com/api/nepali', {
       mode: 'no-cors',
     });
+
+    console.log(response);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -22,4 +24,4 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // <pre>${JSON.stringify(data, null, 2)}</pre>
 // https://nepalidate.onrender.com/api/nepali
-// 'https://jsonplaceholder.typicode.com/posts/1'
+// https://jsonplaceholder.typicode.com/posts/1
